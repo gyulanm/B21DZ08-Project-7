@@ -1,0 +1,472 @@
+@import url("common.css");
+
+.wrapper {
+    max-width: 482px;
+}
+.banner {
+    padding-left: 629px; 
+    padding-top: 357px;
+    padding-bottom: 408px;
+    box-sizing: border-box;
+    background-color: var(--col-bg-light);
+    border-radius: 0px 0px 70px 70px;
+    position: relative;
+    
+}
+.banner__img {
+    position: absolute;
+}
+.research {
+    position: relative;
+    overflow: hidden;
+    padding: 220px 100px 129px;
+}
+
+.text-wrapper {
+    max-width: 606px;
+}
+
+.compas__img {
+    top: 50%;
+    transform: translateY(-50%);
+    left: -65%;
+    animation: rotate 10s linear infinite;
+    position: absolute;
+}
+.compas__img--right {
+    right: -65%;
+    left: auto;
+}
+
+.eng__img {
+    right: 186px;
+    bottom: 128px;
+}
+
+.chemistry__img {
+    right: 108px;
+    bottom: 68px;
+}
+
+.research--text {
+    max-width: 606px;
+    box-sizing: border-box;
+    padding-top: 220px;
+    padding-right: 100px;
+}
+.solutions--problem {
+    max-width: 665px;
+    box-sizing: border-box;
+    padding-top: 150px;
+    padding-right: 100px;
+}
+
+.solutions--problem__img  {
+    display: grid;
+    grid-auto-flow: row;
+    gap: 80px;
+    justify-content: end;
+}
+
+.card {
+    background-color: var(--col-white);
+    border-radius: 31px;
+    box-sizing: border-box;
+    padding: 35px 27px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+.card__img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+
+.card__content {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    width: 100%;
+    align-items: center;
+}      
+.card__people {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.card__person+.card__person {
+    margin-left: -15px;
+}
+.card__person {
+    border-radius: 50%;
+    border: 5px solid var(--col-white);
+}
+.card__more {
+    border-radius: 50%;
+    border: 5px solid var(--col-white);
+    margin-left: -15px;
+    width: 100px;
+    height: 100px;
+    background-color: var(--col-bg-dark);
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 47px;
+    color: var(--col-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card__text {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    color: #0B2165;
+    padding: 0 15px;
+}
+.card__number {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 129px;
+    line-height: 158px;
+    color: #ABFC4F;
+
+}
+.research--cards {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 425px 318px;
+    column-gap: 30px;
+    row-gap: 40px;
+    grid-template-areas: 
+    "survey survey analysis difficulty"
+    "sex hypothesis interview interview"
+    ;
+    margin-top: 225px;
+}
+.compas__img--research {
+    top:30%;
+}
+.physics__img {
+    position: absolute;
+    right: 606px;
+    top: 852px;
+}
+
+.card--survey {
+    grid-area: survey;
+
+}
+
+.card--survey > .card__text {
+    max-width: 213px;
+}
+
+.card--survey > .card__number {
+    margin-top: 44px;
+}
+.card--analysis {
+    grid-area: analysis;
+}
+
+
+.card--difficulty {
+    grid-area: difficulty;
+}
+
+.card--sex {
+    grid-area: sex;
+}
+
+.card--hypothesis {
+    grid-area: hypothesis;
+}
+
+.card--interview {
+    grid-area: interview;
+
+}
+
+.card--interview > .card__text {
+    max-width: 360px;
+}
+.solutions {
+    box-sizing: border-box;
+    background-color: var(--col-bg-light);
+    border-radius: 70px 70px 0px 0px;
+    border-bottom: 4px dashed var(--col-white);
+    padding: 160px 100px;
+}
+.solutions__title {
+    max-width: 553px;
+    margin-bottom: 129px;
+}
+.item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;    
+    justify-content: space-between;
+}
+
+.item__img {
+    width: 140px;
+    height: 140px;
+}
+
+.item__text {
+    max-width: 668px;
+    
+}
+.items-wrapper {
+    row-gap: 100px;
+    display: flex;
+    flex-direction:column;
+    width: 900px;
+}
+.mechanics {
+    padding: 130px 100px 65px;
+    height: 758px;
+    box-sizing: border-box;
+}
+.mechanics__content {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.mechanics__content > img, .mechanics__content > p {
+    position: absolute;
+}
+.mechanics__content > p {
+    font-family: 'Raleway';
+    font-weight: 400;
+    color: #FFFFFF;
+    font-size: 29px;
+    line-height: 35px;
+}
+.search{
+    top: 315px;
+    left: 116px;
+}
+
+.read{
+    top: 218px;
+    left: 406px;
+}
+
+.mechanics__content > .look{
+    font-size: 19px;
+    line-height: 23px;
+    right: 490px;
+    top: 53px;
+}
+
+.like{
+    right: 412px;
+    top: 298px;
+}
+
+.save{
+    right: 123px;
+    top: 61px;
+}
+
+.search__img {
+    top: 205px;
+    left: 24px;
+}
+
+.read__img {
+    top: 62px;
+    left: 270px;
+}
+
+.look__img {
+    right: 403px;
+    top: -61px;
+}
+
+.like__img {
+    right: 294px;
+    top: 175px;
+}
+
+.save__img {
+    right: 11px;
+    top: -105px;
+}
+
+.audience {
+    padding: 65px 40px;
+    box-sizing: border-box;
+    background-color: var(--col-black);
+    border-radius: 60px;
+}
+.audience__title {
+    margin-left: 63px ;
+    margin-bottom: 76px ;
+}
+.audience-wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    width: 100%;
+    column-gap: 39px;
+}
+.audience__img {
+    border-radius: 30px;
+    position: relative;
+    height: 473px;
+}
+.audience__img::before {
+    border-radius: 35px;
+    position: absolute;
+    display: block;
+    padding: 10px 50px;
+    background-color: var(--col-white);
+    font-family: 'Raleway';
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 29px;
+    color: var(--col-black);
+    bottom: 15px;
+    right: 15px;
+}
+.graduate::before {
+    background-color: var(--col-green);
+    content: "Выпускники";
+}
+.uneployed::before {
+    content: "Безработные";
+}
+.translatable::before {
+    content: "Переводящиеся";
+}
+.graduate {
+    background: url("../img/graduate.jpg") center center no-repeat;
+    background-size: cover; 
+}
+.uneployed {
+    background: url("../img/uneployed.jpg") center center no-repeat;
+    background-size: cover; 
+}
+.translatable {
+    background: url("../img/translatable.jpg") center center no-repeat;
+    background-size: cover; 
+}
+.audience__line {
+    margin-top: 55px;
+    margin-bottom: 50px;
+    width: 100%;
+}
+.person__name {
+    font-family: 'Raleway';
+    font-weight: 600;
+    font-size: 29px;
+    line-height: 34px;
+    color: #FFFFFF;
+}
+.person__description {
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 25px;
+    color: white;
+    margin-bottom: 29px;
+    margin-top: 20px;
+    max-width: 456px;
+}
+.word-wrapper {
+    display: flex;
+    flex-direction: row;
+    column-gap: 5px;
+}   
+.person__word {
+    font-family: 'Raleway';
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    color: #FFFFFF;
+    padding: 12px 30px;
+    border: 2px solid #B7B7B7;
+    border-radius: 60px;
+}
+.author {
+    padding: 220px 100px 344px;
+    position: relative;
+}
+.author__title {
+    margin-bottom: 155px;
+    color: #ABFC4F;
+
+}
+.author > .card__people {
+    margin:0 auto;
+    max-width: max-content;
+}
+.author > .card__people > .card__person {
+    border: 14px solid #2356F6;
+}
+.author > .card__people > .card__person + .card__person {
+    margin-left: -50px;
+}
+.names-wrapper {
+    width: 733px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.author__name {
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 41px;
+    line-height: 49px;
+    color: #FFFFFF;
+}
+.author > .compas__img {
+    width: 1440px;
+    height: auto;
+    z-index: -1;
+    left: 0;
+}
+.author > .eng__img {
+    bottom: 80px;
+    right: 100px;
+    position: absolute;
+}
+
+.footer {
+    height: 576px;
+    border-radius: 50px 50px 0px 0px ;
+    background-color: #FFFFFF;
+    position: relative;
+}
+
+.info-wrapper {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: 62px;
+    right: 51px;
+}
+
+.footer__info {
+    border-radius: 36px;
+    padding: 12px 20px;
+    font-family: 'Raleway';
+    font-weight: 500;
+    font-size: 29px;
+    line-height: 34px;
+} 
+.uni--name {
+    background-color: #242424;
+    color: #FFFFFF;
+}
+.group--number {
+    background-color: #ABFC4F;
+    color: #0E0E0E;
+}
