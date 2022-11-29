@@ -1,0 +1,590 @@
+@import url("common.css");
+@import url(common-adaptive.css);
+
+
+.wrapper {
+    max-width: 482px;
+}
+.banner {
+    padding-left: 629px; 
+    padding-top: 353px;
+    padding-bottom: 352px;
+    box-sizing: border-box;
+    background-color: var(--col-bg-light);
+    border-radius: 0px 0px 70px 70px;
+    position: relative;
+    
+}
+.banner__img {
+    position: absolute;
+}
+
+.compas__img {
+    top: 50%;
+    transform: translateY(-50%);
+    left: -65%;
+    /* animation: rotate 10s linear infinite; */
+    position: absolute;
+}
+
+.career {
+    padding: 255px 100px 240px;
+    position: relative;
+}
+
+.career__title {
+    margin-bottom: 80px;
+    max-width: 784px;
+    font-weight: 600;
+    font-size: 69px;
+    line-height: 81px;
+}
+
+.career__text {
+    max-width: 636px;
+}
+
+.physics__img {
+    position: absolute;
+    bottom: 295px;
+    right: 419px
+}
+.chemistry__img {
+    position: absolute;
+    bottom: 222px;
+    right: 497px
+}
+
+.application {
+    background-color: var(--col-white);
+    border-radius: 70px;
+    padding: 210px 0;
+}
+.item {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    justify-content: space-between;
+    padding-inline: 190px;
+    box-sizing: border-box;
+    column-gap: 138px;
+}
+
+.item:nth-child(2) {
+    flex-direction: row;
+    padding: 160px 190px;
+    border-bottom: 4px dashed #000000;
+    border-top: 4px dashed #000000;
+    margin-block: 160px;
+}
+.item:nth-child(3) {
+    padding-inline : 72px 104px ;
+    column-gap: 96px;
+}
+.item__number {
+    font-family: 'Raleway';
+    font-weight: 500;
+    font-size: 126px;
+    line-height: 116px;
+    color: #0E0E0E;
+    background-color: #ABFC4F;
+    width: max-content;
+    border-radius: 78px;
+    padding-inline: 26px;
+    padding-bottom: 3px;
+    height: 124px;
+}
+.item__title {
+    font-weight: 600;
+    font-size: 57px;
+    line-height: 68px;
+    width: max-content;
+    margin-top: 50px;
+    margin-bottom: 44px;
+}
+
+.title-1 {
+    background: url('../img/promo/title-1.svg') center left no-repeat;
+    background-size: cover;
+    padding: 10px 46px 10px 16px;
+}
+.title-2 {
+    background: url('../img/promo/title-2.svg') center left no-repeat;
+    background-size: cover;
+    padding: 15px 46px 15px 16px;
+}
+.title-3 {
+    background: url('../img/promo/title-3.svg') center left no-repeat;
+    background-size: contain;
+    padding: 17px 39px 14px 24px;
+}
+.item__text {
+    font-size: 30px;
+    line-height: 35px;
+    color: #000000;
+}
+
+
+.item__images {
+    display: flex;
+    flex-direction: row;
+    column-gap: 27px;
+}
+
+.item__img:nth-child(2) {
+    height: 613px;
+}
+
+
+.compas {
+    padding: 220px 0 180px;
+    background-color: var(--col-bg-light);
+    margin-top: -70px;
+    border-bottom: 4px dashed var(--col-green);
+    position: relative;
+}
+
+.compas__title {
+    font-weight: 600;
+    font-size: 232.599px;
+    line-height: 273px;
+    text-align: center;
+    color: #ABFC4F;
+    
+}
+
+.compas__logo {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.footer {
+    padding: 216px 128px 300px 179px;
+}
+
+.footer__text {
+    font-weight: 500;
+    font-size: 39px;
+    line-height: 46px;
+    margin-bottom: 115px;
+}
+
+.form__group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form__group + .form__group {
+    margin-top: 32px;
+}
+
+.form__group input {
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 78px;
+    color: white;
+    padding: 15px 60px;
+    font-weight: 400;
+    font-size: 39px;
+    line-height: 46px;
+    cursor: pointer;
+    width: 288px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.form__group input:last-child {
+    width: 555px;
+}
+
+.form__group input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.form__policy {
+    width: 361px;
+    font-size: 20px;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.form__policy__link {
+    font-size: 20px;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 0.4);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.form__group button {
+    border-radius: 78px;
+    color: #141414;
+    padding: 15px 60px;
+    font-weight: 400;
+    font-size: 39px;
+    line-height: 46px;
+    cursor: pointer;
+    width: 555px;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #ABFC4F;
+    border: none;
+}
+
+@media screen and (max-width: 390px) {
+
+    .wrapper {
+        max-width: 370px;
+    }
+
+    .banner {
+        padding-left: 7px; 
+        padding-top: 305px;
+        padding-bottom: 305px;
+        overflow: hidden;
+    }
+
+
+    .career {
+    padding: 255px 7px 240px;
+    }
+
+    .career__title {
+        margin-bottom: 80px;
+        max-width: 304px;
+        font-size: 45px;
+        line-height: 55px;
+    }
+
+    .career__text {
+        max-width: 307px;
+    }
+
+    .physics__img {
+        bottom: 70px;
+        right: 75px;
+        width: 85px;
+    }
+
+    .chemistry__img {
+        bottom: 25px;
+        right: 165px
+    }
+
+    .item {
+        flex-direction: column;
+        padding-inline: 7px;
+        row-gap: 65px;
+        align-items: flex-start;
+    }
+
+    .item:nth-child(2) {
+        flex-direction: column;
+        padding: 160px 7px;
+        margin-block: 160px;
+    }
+
+    .item:nth-child(3) {
+        padding: 72px 7px ;
+        column-gap: 96px;
+    }
+
+    .item__number {
+        font-size: 100px;
+    }
+
+    .item__title {
+        font-size: 39px;
+        line-height: 45px;
+    }
+
+    .title-1 {
+        background-size: contain;
+    }
+    .title-2 {
+        background-size: contain;
+    }
+    .title-3 {
+        background-size: contain;
+    }
+
+    .item__text {
+        font-size: 25px;
+        line-height: 25px;
+    }
+
+    .item__img:nth-child(2) {
+        height: 460px;
+    }
+    
+    .item__images .item__img {
+        height: 316px;
+    }
+
+    h1, h2,h3,h4 {
+        font-size: 65px;
+    }
+
+    p {
+        font-size: 30px;
+    }
+
+    .header {
+        width: auto;
+        padding: 23px 20px;
+
+    }
+
+    .nav {
+        column-gap: 10px;
+    }
+
+}
+
+@media (min-width: 1024px) {
+    .compas__img {
+        left: -95%;
+    }
+}
+@media (min-width: 834px) {
+    .compas__img {
+        left: -115%;
+    }
+}
+
+.career {
+    padding: 255px 100px 240px;
+    position: relative;
+}
+
+.career__title {
+    margin-bottom: 80px;
+    max-width: 784px;
+    font-weight: 600;
+    font-size: 69px;
+    line-height: 81px;
+}
+@media (min-width: 834px) {
+    .career__title {
+        font-size: 43px;
+        line-height: 50px;
+    }
+}
+.career__text {
+    max-width: 636px;
+}
+
+.physics__img {
+    position: absolute;
+    bottom: 295px;
+    right: 419px
+}
+@media (min-width: 834px) {
+    .physics__img  {
+        bottom: 86px;
+        right: 207px
+        
+    }
+}
+.chemistry__img {
+    position: absolute;
+    bottom: 222px;
+    right: 497px
+}
+@media (min-width: 834px) {
+    .chemistry__img {
+        bottom: 43px;
+        right: 318px
+        
+    }
+}
+
+.application {
+    background-color: var(--col-white);
+    border-radius: 70px;
+    padding: 210px 0;
+}
+.item {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    justify-content: space-between;
+    padding-inline: 190px;
+    box-sizing: border-box;
+    column-gap: 138px;
+}
+@media (min-width: 1024px) {
+        .item {
+            padding-inline: 160px;
+            width: 80%;
+        }
+}
+.item:nth-child(2) {
+    flex-direction: row;
+    padding: 160px 190px;
+    border-bottom: 4px dashed #000000;
+    border-top: 4px dashed #000000;
+    margin-block: 160px;
+}
+.item:nth-child(3) {
+    padding-inline : 72px 104px ;
+    column-gap: 96px;
+}
+.item__number {
+    font-family: 'Raleway';
+    font-weight: 500;
+    font-size: 126px;
+    line-height: 116px;
+    color: #0E0E0E;
+    background-color: #ABFC4F;
+    width: max-content;
+    border-radius: 78px;
+    padding-inline: 26px;
+    padding-bottom: 3px;
+    height: 124px;
+}
+.item__title {
+    font-weight: 600;
+    font-size: 57px;
+    line-height: 68px;
+    width: max-content;
+    margin-top: 50px;
+    margin-bottom: 44px;
+}
+
+.title-1 {
+    background: url('../img/promo/title-1.svg') center left no-repeat;
+    background-size: cover;
+    padding: 10px 46px 10px 16px;
+}
+.title-2 {
+    background: url('../img/promo/title-2.svg') center left no-repeat;
+    background-size: cover;
+    padding: 15px 46px 15px 16px;
+}
+.title-3 {
+    background: url('../img/promo/title-3.svg') center left no-repeat;
+    background-size: contain;
+    padding: 17px 39px 14px 24px;
+}
+.item__text {
+    font-size: 30px;
+    line-height: 35px;
+    color: #000000;
+}
+
+
+.item__images {
+    display: flex;
+    flex-direction: row;
+    column-gap: 27px;
+}
+
+.item__img:nth-child(2) {
+    height: 613px;
+}
+
+
+.compas {
+    padding: 220px 0 180px;
+    background-color: var(--col-bg-light);
+    margin-top: -70px;
+    border-bottom: 4px dashed var(--col-green);
+    position: relative;
+}
+
+.compas__title {
+    font-weight: 600;
+    font-size: 232.599px;
+    line-height: 273px;
+    text-align: center;
+    color: #ABFC4F;
+    
+}
+
+.compas__logo {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.footer {
+    padding: 216px 128px 300px 179px;
+}
+
+.footer__text {
+    font-weight: 500;
+    font-size: 39px;
+    line-height: 46px;
+    margin-bottom: 115px;
+}
+
+.form__group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form__group + .form__group {
+    margin-top: 32px;
+}
+
+.form__group input {
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 78px;
+    color: white;
+    padding: 15px 60px;
+    font-weight: 400;
+    font-size: 39px;
+    line-height: 46px;
+    cursor: pointer;
+    width: 288px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.form__group input:last-child {
+    width: 555px;
+}
+
+.form__group input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.form__policy {
+    width: 361px;
+    font-size: 20px;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.form__policy__link {
+    font-size: 20px;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 0.4);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.form__group button {
+    border-radius: 78px;
+    color: #141414;
+    padding: 15px 60px;
+    font-weight: 400;
+    font-size: 39px;
+    line-height: 46px;
+    cursor: pointer;
+    width: 555px;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #ABFC4F;
+    border: none;
+}
+
