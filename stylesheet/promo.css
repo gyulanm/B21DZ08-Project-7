@@ -17,13 +17,26 @@
     position: absolute;
 }
 
+
+
 .compas__img {
     top: 50%;
     transform: translateY(-50%);
     left: -65%;
-    animation: rotate 10s linear infinite;
     position: absolute;
 }
+
+@media (max-width: 1023px) {
+    .compas__img {
+        left: -95%;
+    }
+}
+@media (max-width: 833px) {
+    .compas__img {
+        left: -115%;
+    }
+}
+
 
 .career {
     padding: 255px 100px 240px;
@@ -47,11 +60,28 @@
     bottom: 295px;
     right: 419px
 }
+@media (max-width: 1023px) {
+    .physics__img  {
+        bottom: 100px;
+        right: 123px
+        
+    }
+}
+
+
 .chemistry__img {
     position: absolute;
     bottom: 222px;
     right: 497px
 }
+@media (max-width: 1023px) {
+    .chemistry__img   {
+        bottom: 70px;
+        right: 307px
+        
+    }
+}
+
 
 .application {
     background-color: var(--col-white);
@@ -67,6 +97,14 @@
     box-sizing: border-box;
     column-gap: 138px;
 }
+@media (max-width: 1023px) {
+    .item {
+        /* padding-inline: 160px;
+        width: 80%; */
+        flex-direction: column;
+        row-gap: 20px;
+    }
+}
 
 .item:nth-child(2) {
     flex-direction: row;
@@ -74,11 +112,27 @@
     border-bottom: 4px dashed #000000;
     border-top: 4px dashed #000000;
     margin-block: 160px;
+    
 }
+@media (max-width: 1023px) {
+    .item:nth-child(2) {
+        flex-direction: column;
+    }
+}
+
 .item:nth-child(3) {
     padding-inline : 72px 104px ;
     column-gap: 96px;
 }
+@media (max-width: 1023px) {
+    .item:nth-child(2) {
+        flex-direction: column;
+        row-gap: 55px;
+
+    }
+}
+
+
 .item__number {
     font-family: 'Raleway';
     font-weight: 500;
@@ -132,7 +186,11 @@
 .item__img:nth-child(2) {
     height: 613px;
 }
-
+/* @media (max-width: 1023px) {
+    .item:nth-child(2) {
+        height: 837px;
+    }
+} */
 
 .compas {
     padding: 220px 0 180px;
@@ -142,14 +200,23 @@
     position: relative;
 }
 
+
 .compas__title {
     font-weight: 600;
-    font-size: 232.599px;
+    font-size: 232px;
     line-height: 273px;
     text-align: center;
     color: #ABFC4F;
     
 }
+@media (max-width: 1023px) {
+    .compas__title {
+        font-size: 130px;
+        line-height: 273px;
+    }
+}
+
+
 
 .compas__logo {
     position: absolute;
@@ -175,6 +242,11 @@
     justify-content: space-between;
     align-items: center;
 }
+@media (max-width: 1023px) {
+    .form__group {
+        column-gap: 10px;
+    }
+}
 
 .form__group + .form__group {
     margin-top: 32px;
@@ -196,7 +268,7 @@
 }
 
 .form__group input:last-child {
-    width: 555px;
+    width: 288px;
 }
 
 .form__group input::placeholder {
