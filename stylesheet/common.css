@@ -4,11 +4,16 @@
 
 
 
-.body {
+.body  {
     font-family: "Raleway", sans-serif;
     margin: 0;
     background-color: var(--col-bg-dark);
-}
+    /* overflow-x: hidden; */
+    }
+/* section {
+    max-width: 100%;
+    box-sizing: border-box;
+}  */
 
 h1, h2,h3,h4 {
     font-size: 75px;
@@ -17,6 +22,12 @@ h1, h2,h3,h4 {
     color: var(--col-white);
     text-transform: uppercase;
 }
+@media (max-width: 1023px) {
+    h1 {
+        font-size: 39px;
+        line-height:82px;
+    }
+}
 
 p {
     font-weight: 400;
@@ -24,7 +35,18 @@ p {
     line-height: 35px;
     color: var(--col-white);
 }
-
+@media (max-width: 1023px) {
+    p {
+        font-size: 18px;
+        line-height:26px;
+    }
+}
+@media (max-width: 413px) {
+    p {
+        font-size: 14px;
+        line-height: 22px;
+    }
+}
 
 .header {
     width: 100%;
@@ -40,6 +62,12 @@ p {
     position: fixed;
     top: 0;
     z-index: 9999;
+}
+@media (max-width: 413px) {
+    .header {
+        height: 31px;
+        border-radius: 0px 0px 24px 24px;
+    }
 }
 .header__logo {
     height: 100%;
@@ -61,12 +89,29 @@ p {
     border-radius: 20px;
     text-decoration: none;
 }
+@media (max-width: 413px) {
+    .nav__link  {
+        padding: 5px 10px;
+        font-size: 13px;
+        border-radius: 15px;
+    }
+}
 .nav__link--selected, .nav__link:hover {
     background-color: var(--col-green);
 }
 
 .title + .text , .text + .text {
     margin-top: 50px;
+}
+@media (max-width: 1023px) {
+    p {
+        margin-top: 0px;
+    }
+}
+@media (max-width: 833px) {
+    p {
+        margin-top: 0px;
+    }
 }
 @keyframes rotate {
     from {
