@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>programm</title>
+    <link rel="stylesheet" href="stylesheet/style.css">
+    <link rel="stylesheet" href="stylesheet/article.css">
+    <link rel="stylesheet" href="stylesheet/account.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="wrapper">
+            <div class="services">
+                <a class="btn_enter" href="./index.html"> Enter</a>
+                <form action="">
+                    <input class="services__search" type="text" name="search" placeholder="поиск">
+                </form>
+                <a href="./account.html"><img src="img/account.svg" alt=""></a>
+            </div>
+        </div>
+    </header>
+    <section class="account">
+        <div class="wrapper">
+            <div class="grid">
+                <div class="column">
+                    <img class="account__img" src="./img/account.jpg" alt="">
+                    <p class="account__name">Екатерина Волкова</p>
+                    <div class="wrapper__inf">
+                        <div class="row">
+                            <p class="account__reader account__sub">13 читаемые</p>
+                            <img class="reader__img img__svg" src="./img/reader.svg" alt="">
+                        </div>
+                        <div class="row">
+                            <p class="account__follower account__sub">67 читатели</p>
+                            <img class="follower__img img__svg" src="./img/follower.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="account__btn">
+                        <button class="account__save">Сохраненные</button>
+                        <button class="account__comment">Комментарии</button>
+                    </div>
+                    <div class="account__cards">
+                        <div class="account__item">
+                            <img class="account__card-img" src="img/medicalaccount.png" alt="">
+                            <h3 class="account__card-hashtag">#Медосмотр</h3>
+                            <p class="account__card-text">Медосмотр для поступления:<br>медицинская справка 086/У
+                            </p>
+                            <p class="account__card-addinfo">Подробно об медосмотре, который<br>обязаны
+                                проходить
+                                абитуриенты<br>некоторых специаль..</p>
+                        </div>
+                        <div class="account__item">
+                            <img class="account__card-img" src="img/accountadmission.jpg" alt="">
+                            <h3 class="account__card-hashtag">#Поступление</h3>
+                            <p class="account__card-text">Все о поступлении в вуз 2023:<br>подробности, что нужно
+                                знать,<br>ссылки, FAQ
+                            </p>
+                            <p class="account__card-addinfo">Фундаментальный материал про поступление<br>в
+                                вуз 2023.
+                                Добавляйте в
+                                закладки и изучайте....</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- исправить footer -->
+    <footer>
+        <div class="wrapper">
+            <div class="footer__flex">
+                <div class="follow">
+                    <h2>ПОДПИШИСЬ</h2>
+                    <form action="" class="follow__form">
+                        <input class="follow__email" type="email" placeholder="mail">
+                        <button class="follow__btn" type="submit">подписаться</button>
+                    </form>
+                </div>
+                <div class="footer__info">
+                    <ul class="footer__menu">
+                        <li><a href="">Помощь</a></li>
+                        <li><a href="">Обратная связь</a></li>
+                        <li><a href="">Лицензия</a></li>
+                        <li><a href="">Политика<br>
+                                конфиденциальности</a></li>
+                    </ul>
+                </div>
+                <div class="footer__info">
+                    <ul class="footer__menu">
+                        <li><a href="">СЕРВИС</a></li>
+                        <li><a href="">О нас</a></li>
+                        <li><a href="">Вузам</a></li>
+                        <li><a href="">Рекламодателям</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer__line">
+        </div>
+        <div class="wrapper">
+            <p class="copyright">© 2016 - 2023 ООО ENTER</p>
+        </div>
+    </footer>
+    <!-- исправленный footer -->
+    <!-- <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="follow">
+                        <h2>ПОДПИШИСЬ</h2>
+                        <form action="" class="follow__form">
+                            <input class="follow__email" type="email" placeholder="mail">
+                            <button class="follow__btn" type="submit">подписаться</button>
+                        </form>
+                    </div>
+                    <div class="row">
+                        <div class="footer__info">
+                            <h3 class="footer__subtitle">Помощь</h3>
+                            <ul class="footer__menu">
+                                <li><a href="">Обратная связь</a></li>
+                                <li><a href="">Лицензия</a></li>
+                                <li><a href="">Политика<br>
+                                        конфиденциальности</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__info">
+                            <h3 class="footer__subtitle">Сервис</h3>
+                            <ul class="footer__menu">
+                                <li><a href="">О нас</a></li>
+                                <li><a href="">Вузам</a></li>
+                                <li><a href="">Рекламодателям</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="footer__line">
+            <p class="copyright">© 2016 - 2023 ООО ENTER</p>
+        </footer> -->
+    <script src="script.js">
+    </script>
+</body>
+
+</html>

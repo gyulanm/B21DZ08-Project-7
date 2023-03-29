@@ -1,0 +1,232 @@
+.container {
+    max-width: 1415px;
+    margin: 0 auto;
+}
+
+.header__nav {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    gap: 16px;
+    margin: 0 auto;
+}
+
+.nav__link {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 29px;
+    line-height: 36px;
+    display: flex;
+    align-items: center;
+    color: #101010;
+    background: none;
+    box-sizing: border-box;
+    border-radius: 8px;
+    padding: 11px 20px;
+    background: #FFFFFF;
+    border-radius: 50.177px;
+}
+
+.blue__link {
+    background-color: var(--col-blue);
+    color: white;
+    border-radius: 11px;
+}
+
+.green__link {
+    background-color: var(--col-green);
+    border-radius: 11px;
+}
+
+.vertical-divider {
+    min-width: 3px;
+    height: 65px;
+    background: #101010;
+}
+
+.post__cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 85px 35px;
+    margin-bottom: 100px;
+}
+
+.wrapper__post {
+    display: flex;
+    flex-direction: row;
+    column-gap: 35px;
+    align-items: center;
+    margin-block: 80px;
+}
+
+.post__title {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 52px;
+    line-height: 61px;
+    color: #3935FE;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.post__btn {
+    background: none;
+    border: none;
+
+}
+
+.post__paragraph {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 25px;
+    letter-spacing: -0.017em;
+    color: #3935FE;
+}
+
+.post__item {
+    box-sizing: border-box;
+    width: 676px;
+}
+
+.post__item:hover {
+    background: #FFFFFF;
+    box-shadow: 0px 6.23239px 6.23239px rgba(0, 0, 0, 0.25);
+    border-radius: 46px;
+    padding: 50px 40px;
+}
+
+.post__item-wrapper {
+    position: relative;
+}
+
+.post__hashtag {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 28px;
+    letter-spacing: -0.015em;
+    color: #3935FE;
+    text-transform: uppercase;
+}
+
+.post__text {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 29px;
+    line-height: 34px;
+    letter-spacing: -0.015em;
+    color: #000000;
+}
+
+.post__addinfo {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 29px;
+    letter-spacing: -0.015em;
+    color: #737C9B;
+}
+
+.post__img {
+    border-radius: 20px;
+    width: 100%;
+    height: 365px;
+    background: #6461FF;
+    object-fit: cover;
+}
+
+.post_medical {
+    background: #ABFC4F;
+}
+
+.post__popular {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.catalog__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 424px);
+    gap: 65px;
+    width: 100%;
+    margin: 154px 67px 109px 125px;
+}
+
+.cards__item {
+    position: relative;
+
+}
+
+.card__title {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    color: #000000;
+    position: absolute;
+    top: 7px;
+    right: 6px;
+    margin: 0;
+    padding: 4px 11px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+}
+
+.card__btn {
+    padding: 7px 15px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    display: block;
+    max-width: max-content;
+    text-transform: lowercase;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 16px;
+    right: 6px;
+    bottom: 7px;
+    position: absolute;
+}
+
+.card__image {
+    height: auto;
+    width: 100%;
+    border-radius: 12px;
+}
+
+.post__save-btn {
+    border: none;
+    background: none;
+    width: 52px;
+    height: 58px;
+    top: 0;
+    right: 0;
+    position: absolute;
+}
+
+.post_btn {
+    background: #3935FE;
+    padding: 10px 27px;
+    border-radius: 11px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 29px;
+    line-height: 35px;
+    letter-spacing: -0.015em;
+    color: #FFFFFF;
+    display: block;
+    max-width: max-content;
+    margin-bottom: 85px;
+    margin-inline: auto;
+}

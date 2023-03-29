@@ -1,210 +1,173 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>COMPAS</title>
-    <link rel="stylesheet" href="stylesheet/common.css">
-    <link rel="stylesheet" href="stylesheet/main.css">
+    <title>Enter</title>
+    <link rel="stylesheet" href="stylesheet/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
 </head>
-<body class="body">
-    <header class="header">
-        <img class="header__logo" src="img/logo.svg" alt="">
-        <nav class="header__nav nav">
-            <a class="nav__link" href="./promo.html">Промо</a>    
-            <a class="nav__link nav__link--selected" href="./index.html">О нас</a>
-            <a class="nav__link" href="./blog.html">Блог</a>
-        </nav>
+
+<body>
+    <header>
+        <div class="wrapper">
+            <div class="services">
+                <a class="btn_enter" href="./index.html"> Enter</a>
+                <form action="">
+                    <input class="services__search" type="text" name="search" placeholder="поиск">
+                </form>
+                <a href="./account.html"><img src="img/account.svg" alt=""></a>
+            </div>
+        </div>
     </header>
-        
-        <section class="banner"> 
+    <main>
+        <section class="promo">
             <div class="wrapper">
-                <h1 class="banner__title title">КТО МЫ?</h1>
-                <p class="banner__text text">Медиа-сервис, помогающий  определиться с выбором образовательной программы</p>
+                <div class="promo__banner">
+                    <h2 class="promo_title">О нас</h2>
+                    <p class="promo_text">Поможем пройти тернистый путь поступления гораздо легче!</p>
+                    <a class="btn" href="./articlecard.html"> читать</a>
+                </div>
             </div>
-            <img class="banner__img compas__img" src="./img/compas.svg" alt="">
-            <img class="banner__img chemistry__img" src="./img/icon_chemistry.svg" alt="">
-            <img class="banner__img eng__img" src="./img/icon_eng.svg" alt="">
-        </section> 
-        <section class="research">
-            <img class="compas__img compas__img--right compas__img--research" src="./img/compas.svg" alt="">
-            <img class="physics__img" src="./img/icon_physics.svg" alt="">
-            <div class="text-wrapper">
-                <h2 class="research__title title">РЕЗУЛЬТАТЫ
-                    ИССЛЕДОВАНИЯ</h2>
-                <p class="research__text text" >Вспоминая себя в период поступления, 
-                    мы помним, как столкнулись с проблемой 
-                    выбора образовательной программы. 
-                    На сайтах профориентации было слишком 
-                    много устаревшей информации и они были 
-                    очень непонятны по структуре. Хотелось 
-                    бы найти сервис, где будет храниться 
-                    вся необходимая информация.
-                </p>
-                <p class="research__text text">
-                    В конце исследования мы поняли, 
-                    что это проблема актуальна среди 
-                    поступающих в вузы и они переживают
-                    схожие трудности.
-                </p>
-            </div>
-            <div class="research--cards">
-                <div class="card--survey card">
-                    <h3 class="card__number">40</h3>
-                    <p class="card__text">Человек принимали 
-                        участие в опросе</p>
-                </div>
-                <div class="card--analysis card"> 
-                    <img class="card__img" src="./img/column_diagram.jpg" alt="">
-                    <p class="card__text">В каком возрасте опрошенные серьезно думали о выборе профессии?</p>
-                </div>
-                <div class="card--difficulty card">
-                    <img class="card__img" src="./img/column_circle.jpg" alt="">
-                    <p class="card__text">Испытывали ли вы трудности при выборе профессии?</p>
-                </div>
-                <div class="card--sex card">
-                    <img class="card__img" src="./img/diagram.jpg" alt="">
-                </div>
-                <div class="card--hypothesis card">
-                    <img class="card__img" src="./img/question.jpg" alt="">
-                    <p class="card__text">Мы подтвердили 
-                        наши гипотезы</p>
-                </div>
-                <div class="card--interview card">
-                    <div class="card__content">                    
-                        <h3 class="card__number">7</h3>
-                        <div class="card__people">
-                            <img class="card__person" src="./img/girl.jpg" alt="">
-                            <img class="card__person" src="./img/girl.jpg" alt="">
-                            <img class="card__person" src="./img/girl.jpg" alt="">
-                            <div class="card__more">+4</div>
+        </section>
+        <section class="news">
+            <div class="topics">
+                <div class="wrapper">
+                    <div class="title-group">
+                        <h2 class="topics__title title">События</h2>
+                        <p class="topics__addinfo addinfo">Актуальные мероприятия</p>
+                    </div>
+                    <div class="divider">
+                    </div>
+                    <div class="topics__flex">
+                        <div class="topics__card topics__card--white">
+                            <div class="column">
+                                <h3 class="topics__card-title topics__card-title--black "> День<br>открытых<br>дверей
+                                </h3>
+                                <p class="topics__card-date topics__card-date--black">25 марта</p>
+                            </div>
+                            <img class="topics__card-img" src="./img/mai.png" alt="">
+                        </div>
+                        <div class="topics__card topics__card--blue">
+                            <div class="column">
+                                <h3 class="topics__card-title topics__card-title--white"> День<br>открытых<br>дверей
+                                </h3>
+                                <p class="topics__card-date topics__card-date--white">26 марта</p>
+                            </div>
+                            <img class="topics__card-img" src="./img/hse.png" alt="">
                         </div>
                     </div>
-                    <p class="card__text">Провели 7 интервью, проанализировав полные ответы
-                    </p>
+                </div>
+            </div>
+            <div class="popular">
+                <div class="wrapper">
+                    <div class="title-group">
+                        <a class="popular__title title" href="./articlecard.html">Популярное</a>
+                        <p class="popular__addinfo addinfo">Самые читаемые статьи</p>
+                    </div>
+                    <div class="popular__flex">
+                        <div class="popular__card popular__card--design">
+                            <h3 class="popular__card-text">Факультет<br>дизайна</h3>
+                            <button class="popular__card-btn">
+                                <img src="./img/btnsave.png" alt="">
+                            </button>
+                        </div>
+                        <div class="popular__card popular__card--maths">
+                            <h3 class="popular__card-text">Факультет<br>математики</h3>
+                            <button class="popular__card-btn">
+                                <img src="./img/btnsave.png" alt="">
+                            </button>
+                        </div>
+                        <button class="popular__arrow">
+                            <img src="./img/populararrow.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            </div>
+            </div>
+            <div class="recommendations">
+                <div class="wrapper">
+                    <div class="title-group">
+                        <a class="recommendations__title title" href="./articlecard.html">Рекомендуем</a>
+                        <p class="recommendations__addinfo addinfo">То, что мы советуем</p>
+                    </div>
+                    <div class="divider">
+                        <div class="highlight"></div>
+                    </div>
+                    <div class="rec__visible">
+                        <div class="rec__flex">
+                            <div class="rec__item">
+                                <img class="rec__img" src="img/medical.png" alt="">
+                                <h3 class="rec__hashtag">#Медосмотр</h3>
+                                <p class="rec__text text">Медосмотр для поступления:<br>медицинская справка 086/У
+                                </p>
+                                <p class="rec__addinfo">Подробно об медосмотре, который<br>обязаны проходить
+                                    абитуриенты<br>некоторых специаль..</p>
+                            </div>
+                            <div class="rec__item">
+                                <img class="rec__img" src="img/admission.jpg" alt="">
+                                <h3 class="rec__hashtag">#Поступление</h3>
+                                <p class="rec__text text">Какие документы нужны<br>для поступления в вузу?
+                                </p>
+                                <p class="rec__addinfo">Из этой статьи вы узнаете, какие<br>документы нужны для
+                                    поступления.. </p>
+                            </div>
+                            <div class="rec__item">
+                                <img class="rec__img" src="img/studentid.jpg" alt="">
+                                <h3 class="rec__hashtag">#Поступление</h3>
+                                <p class="rec__text text">Льготы при поступлении в вуз 2018 в<br>подробностях..
+                                </p>
+                                <p class="rec__addinfo">Все о льготах при поступлении в ВУЗ</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-        <section class="solutions">
-            <h2 class="solutions__title title">РЕШЕНИЕ ПРОБЛЕМЫ</h2>
-            <div class="items-wrapper">
-                <div class="solutions__item item">
-                    <p class="item__text text">
-                        Мы решили собрать в одном месте
-                    <br>актуальную и основную информацию
-                    <br>о большом перечне факультетов
-                    </p>
-                    <img class="item__img" src="./img/icon_faculty.svg" alt="">
-                </div>
-                <div class="solutions__item item">
-                    <p class="item__text text">
-                        Пользователь сможет узнать больше 
-                <br>об интересующей его специальности, 
-                <br>посмотрев видео/влоги на эту тему
-            
-                    </p>
-                    <img class="item__img" src="./img/icon_video.svg" alt="">
-                </div>
-                <div class="solutions__item item">
-                    <p class="item__text text">
-                        Мы предоставляем статьи, благодаря 
-                <br>которым можно  тщательнее ознакомиться 
-                <br>с профессиями, учитывая как положительные, 
-                <br>так и негативные стороны
-                    </p>
-                    <img class="item__img" src="./img/icon_proscons.svg" alt="">
-                </div>
-                <div class="solutions__item item">
-                    <p class="item__text text">
-                        Открыв страницу заинтересовавшего фаультета, 
-                        читатель получает 
-                <br>доступ к подробной информации 
-                <br>о требованиях вузов
-                    </p>
-                    <img class="item__img" src="./img/icon_information.svg" alt="">
-                </div>
-            </div>
-        </section>
-        <section class="mechanics">
-            <h2 class="mechanics__title title">Механики</h2>
-            <div class="mechanics__content">
-                <img class="search__img" src="./img/search.svg" alt="">
-                <img class="read__img" src="./img/read.svg" alt="">
-                <img class="look__img" src="./img/look.svg" alt="">
-                <img class="like__img" src="./img/like.svg" alt="">
-                <img class="save__img" src="./img/save.svg" alt="">
+    </main>
+    <footer>
+        <div class="wrapper">
+            <div class="footer__flex">
+                <div class="follow">
+                    <h2>ПОДПИШИСЬ</h2>
+                    <form action="" class="follow__form">
+                        <input class="follow__email" type="email" placeholder="mail">
+                        <button class="follow__btn" type="submit">подписаться</button>
 
-                <p class="search">поиск</p>
-                <p class="read">читать</p>
-                <p class="look">смотреть</p>
-                <p class="like">лайк</p>
-                <p class="save">сохранять</p>
-            </div>
-        </section>
-        <section class="audience">
-            <h2 class="audience__title title">Целевая аудитория</h2>
-            <div class="audience-wrapper">
-                <div class="audience__img graduate"></div>
-                <div class="audience__img translatable" ></div>
-                <div class="audience__img uneployed" ></div>
-            </div>
-            <img class="audience__line" src="./img/line.svg" alt="">
-            <div class="audience-wrapper">
-                <div class="audience__person person">
-                    <h3 class="person__name">Олеся</h3>
-                    <p class="person__description"> Представляет большую часть нашей целевой аудитории.
-                    Оканчивает одиннадцатый класс, в этом году ей предстоит сдать выпусные экзамены. 
-                    Не может сделать выбор.</p>
-                    <div class="word-wrapper">
-                        <p class="person__word">ЕГЭ</p>
-                        <p class="person__word">ПОТЕРЯННОСТЬ</p>
-                    </div>
+                    </form>
                 </div>
-                <div class="audience__person person">
-                    <h3 class="person__name">Олег</h3>
-                    <p class="person__description"> Учится на втором курсе юридического. Понял, 
-                    что данная специализация ему не подходит, хочет перевестись и рассматривает варианты.</p>
-                    <div class="word-wrapper"> 
-                        <p class="person__word">ПОИСК</p>
-                        <p class="person__word">РАЗАЧОРАВАНИЕ</p>
-                    </div>
+                <div class="footer__info">
+                    <ul class="footer__menu">
+                        <li><a href="">Помощь</a></li>
+                        <li><a href="">Обратная связь</a></li>
+                        <li><a href="">Лицензия</a></li>
+                        <li><a href="">Политика<br>
+                                конфиденциальности</a></li>
+                    </ul>
                 </div>
-                <div class="audience__person person">
-                    <h3 class="person__name">Алексей</h3>
-                    <p class="person__description "> Не работает по специальности бухгалтера, так как она устарела, хочет переквалифицироваться.</p>
-                    <div class="word-wrapper"> 
-                        <p class="person__word">НОВОЕ</p>
-                        <p class="person__word">СТРАХ</p>
-                    </div>
+                <div class="footer__info">
+                    <ul class="footer__menu">
+                        <li><a href="">СЕРВИС</a></li>
+                        <li><a href="">О нас</a></li>
+                        <li><a href="">Вузам</a></li>
+                        <li><a href="">Рекламодателям</a></li>
+                    </ul>
                 </div>
             </div>
-        </section>
-        <section class="author">
-            <img class="compas__img" src="./img/compas.svg" alt="">
-            <h2 class="author__title">СОЗДАТЕЛИ
-                <br>ПРОЕКТА</h2>
-                <div class="card__people">
-                    <img class="card__person" src="./img/aysel.jpg" alt="">
-                    <img class="card__person" src="./img/gyulan.jpg" alt="">
-                </div>
-                <div class="names-wrapper">
-                    <p class="author__name">Айсель
-                        <br>Магеррамова</p>
-                    <p class="author__name">Гюлан
-                        <br>Маммедова</p>
-                    </div>
-                    <img class="eng__img" src="./img/icon_eng.svg" alt="">
-                </section>
-        <footer class="footer">
-            <div class="info-wrapper">
-                <p class="footer__info uni--name">HSE ART & DESIGN SCHOOL</p>
-                <p class="footer__info group--number">б21308</p>
-            </div>
-        </footer>
+        </div>
+        <div class="footer__line">
+        </div>
+        <div class="wrapper">
+            <p class="copyright">© 2016 - 2023 ООО ENTER</p>
+        </div>
+    </footer>
+    <script src="script.js">
+    </script>
 </body>
+
 </html>

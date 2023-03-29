@@ -1,10 +1,10 @@
 :root {
-    --col-bg-dark:#2356F6;
-    --col-bg-light:#3768FF;
-    --gap: 30px;
-    --col-green: #ABFC4F;
+    --col-bg-dark:#1B46F5;
+    --col-bg-light:#3935FE;
+    --col-green: ##ABFC4F;
     --col-white: #FFFFFF;
     --col-grey: #F2F2F2;
-    --col-black: #141414;
+    --col-black: ##202020;
     --font-col: #0E0E0E;
+    --col-light-blue:#6461FF;
 }
