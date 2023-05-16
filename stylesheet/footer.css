@@ -1,0 +1,116 @@
+@import url("variables.css");
+
+@font-face {
+    font-family: 'Raleway';
+    src: url(../fonts/Raleway-Regular.woff) format('woff');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url(../fonts/Raleway-Bold.woff) format('woff');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url(../fonts/Raleway-SemiBold.woff) format('woff');
+    font-weight: 600;
+}
+footer {
+    background-color: var(--col-blue);
+    color: var(--col-white);
+    font-family: 'Raleway';
+}
+
+.footer__flex {
+    display: flex;
+}
+
+.follow {
+    flex-grow: 1;
+}
+
+.footer__info {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: var(--col-white);
+    padding: 0;
+}
+.footer__info:last-child {
+    margin-left: 35px;
+}
+.footer__subtitle {
+    text-transform: uppercase;
+}
+.footer__menu li {
+    list-style-type: none;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.footer__menu li:nth-child(1) {
+    margin-bottom: 20px;
+}
+
+.follow h2 {
+    font-weight: 600;
+    font-size: 70px;
+}
+
+.follow__form {
+    margin-bottom: 200px;
+}
+
+
+.follow__email {
+    background-color: transparent;
+    border: 1px solid #FFFFFF;
+    padding: 10px 40px 10px 10px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    width: 240px;
+    font-size: 25px;
+    box-sizing: border-box;
+}
+
+
+.follow__btn {
+    border: 1px solid white;
+    border-radius: 25px;
+    background-color: var(--col-white);
+    padding: 10px 20px;
+    font-size: 25px;
+    margin-left: -25px;
+    box-sizing: border-box;
+}
+
+
+.follow__email::placeholder {
+    color: var(--col-blue);;
+}
+
+
+.footer__line {
+    border-bottom: 3px solid #6461FF;
+
+}
+.row {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 1px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.footer__menu li a {
+    text-decoration: none;
+    color: var(--col-white);
+}
+.footer__menu {
+    padding: 0;
+
+}

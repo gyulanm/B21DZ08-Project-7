@@ -5,169 +5,120 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="stylesheet/style.css">
-    <link rel="stylesheet" href="stylesheet/article.css">
+    <title>Enter</title>
+    <link rel="stylesheet" href="stylesheet/common.css">
     <link rel="stylesheet" href="stylesheet/articlecard.css">
+    <link rel="stylesheet" href="stylesheet/article.css">
+    <link rel="stylesheet" href="stylesheet/footer.css">
+    <link rel="stylesheet" href="stylesheet/header.css">
+    <link rel="stylesheet" href="stylesheet/variable.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
         <div class="wrapper">
             <div class="services">
-                <a class="btn_enter" href="./index.html"> Enter</a>
+                <a class="logo" href="./index.html"></a>
                 <form action="">
                     <input class="services__search" type="text" name="search" placeholder="поиск">
                 </form>
-                <a href="./account.html"><img src="img/account.svg" alt=""></a>
+                <nav class="header__nav nav">
+                    <a class="nav__link nav__link--selected" href="">Промо</a>
+                    <a class="nav__link" href="./index.html">О нас</a>
+                    <a class="nav__link" href="./articlecard.html">Статьи</a>
+                </nav>
             </div>
         </div>
     </header>
     <header class="header__menu">
         <div class="container">
-            <nav class="header__nav nav">
-                <a class="nav__link blue__link" href="#">Рекомендуем</a>
-                <a class="nav__link green__link" href="#">Популярное</a>
-                <div class="vertical-divider"></div>
-                <a class="nav__link" href="#">Поступление</a>
-                <a class="nav__link" href="#">Бюджет</a>
-                <a class="nav__link" href="#">Факультеты</a>
-                <a class="nav__link" href="#">Медосмотр</a>
+            <h2 class="post__title">Статьи</h2>
+            <nav class="header__filter filter">
+                <button class="filter__link filter__link--selected article-hashtag " data-filter-type="all"  href="#">Все</button>
+                <button class="filter__link article-hashtag" data-filter-type="recommendations" href="#">Рекомендуем</button>
+                <button class="filter__link article-hashtag" data-filter-type="popular" href="#">Популярное</button>
+                <button class="filter__link article-hashtag" data-filter-type="admission" href="#">Поступление</button>
+                <button class="filter__link article-hashtag" data-filter-type="budget" href="#">Бюджет</button>
+                <button class="filter__link article-hashtag" data-filter-type="faculty" href="#">Факультеты</button>
+                <button class="filter__link article-hashtag" data-filter-type="medicine" href="#">Медосмотр</button>
             </nav>
         </div>
     </header>
-    <section class="post">
-        <div class="wrapper">
-            <div class="post__row">
-                <div class="wrapper__post">
-                    <h2 class="post__title">Статьи</h2>
-                    <button class="post__btn"> <img src="./img/articlecardbtn.svg" alt=""></button>
-                    <p class="post__paragraph">100 результатов</p>
-                </div>
-                <div class="post__cards">
-                    <a class="post__item">
-                        <img class="post__img post_medical" src="img/medical.png" alt="">
-                        <div class="post__item-wrapper">
-                            <h3 class="post__hashtag">#Медосмотр</h3>
-                            <p class="post__text text">Медосмотр для поступления:<br>медицинская справка 086/У
-                            </p>
-                            <p class="post__addinfo">Подробно об медосмотре, который<br>обязаны проходить
-                                абитуриенты<br>некоторых специаль..</p>
-                            <button class="post__save-btn">
-                                <img src="./img/articlecardsave.png" alt="">
-                            </button>
-                        </div>
+    <section class="article">
+        <div class="container">
+            <div class="article__flex">
+                <a class="rec__item" data-article-type="popular,recommendations,admission">
+                    <img class="rec__img" src="./img/common/documnet.jpg" alt="">
+                    <p class="rec__title ">Документы</p>
+                    <p class="rec__addinfo">Какие документы нужны<br>для поступления в вузу?
+                    </p>
+                </a>
+                <a class="rec__item" href="./article.html" data-article-type="popular,recommendations,admision,budget">
+                    <img class="rec__img" src="./img/common/budget.jpg" alt="">
+                    <p class="rec__title ">Как поступить на бюджет?</p>
+                    <p class="rec__addinfo">Все пути поступления на бюджетное <br> обучение + список оли.. </p>
+                </a>
+                <a class="rec__item" data-article-type="recommendations,admission,budget">
+                    <img class="rec__img" src="./img/common/benefits.jpg" alt="">
+                    <p class="rec__title ">Льготы</p>
+                    <p class="rec__addinfo">Льготы при поступлении <br>
+                        в вуз 2023 в подробностях..</p>
                     </a>
-                    <a class="post__item" href="./article2.html">
-                        <img class="post__img" src="img/budget.jpg" alt="">
-                        <div class="post__item-wrapper">
-                            <h3 class="post__hashtag">#Поступление</h3>
-                            <p class="post__text text">Как поступить на бюджет?
-                            </p>
-                            <p class="post__addinfo">Все пути поступления на бюджетное<br>обучение + список оли..</p>
-                            <button class="post__save-btn">
-                                <img src="./img/articlecardsave.png" alt="">
-                            </button>
-                        </div>
-                    </a>
-                    <a class="post__item">
-                        <img class="post__img" src="img/document.jpg" alt="">
-                        <div class="post__item-wrapper">
-                            <h3 class="post__hashtag">#Поступление</h3>
-                            <p class="post__text text">Какие документы нужны<br>для поступления в вузу?
-                            </p>
-                            <p class="post__addinfo">Из этой статьи вы узнаете, какие документы нужны<br>для поступления..
-                            </p>
-                            <button class="post__save-btn">
-                                <img src="./img/articlecardsave.png" alt="">
-                            </button>
-                        </div>
-                    </a>
-                    <a class="post__item">
-                        <div class="post__item-wrapper">
-                            <img class="post__img" src="img/hsedesign.png" alt="">
-                            <img class="post__popular" src="./img/stars.png" alt="">
-                        </div>
-                        <div class="post__item-wrapper">
-                            <h3 class="post__hashtag">#Поступление</h3>
-                            <p class="post__text text">Школа Дизайна
-                            </p>
-                            <p class="post__addinfo">Все пути поступления на бюджетное обучение<br>+ список оли..</p>
-                            <button class="post__save-btn">
-                                <img src="./img/articlecardsave.png" alt="">
-                            </button>
-                        </div>
-                    </a>
-                    <a class="post__item" href="./article.html">
-                        <img class="post__img" src="img/mathcard.jpg" alt="">
-                        <div class="post__item-wrapper">
-                            <h3 class="post__hashtag">#Поступление</h3>
-                            <p class="post__text text">Математика и компьютерные науки
-                            </p>
-                            <p class="post__addinfo">Подготовка специалистов в области<br>математики и компьютерных наук..</p>
-                            <button class="post__save-btn">
-                                <img src="./img/articlecardsave.png" alt="">
-                            </button>
-                        </div>
-                    </a>
-                    <a class="post__item">
-                        <img class="post__img" src="img/studentid.jpg" alt="">
-                        <div class="post__item-wrapper">
-                            <h3 class="post__hashtag">#Поступление</h3>
-                            <p class="post__text text">Льготы при поступлении в вуз 2023<br>в подробностях..
-                            </p>
-                            <p class="post__addinfo">Все о льготах при поступлении в ВУЗ</p>
-                            <button class="post__save-btn">
-                                <img src="./img/articlecardsave.png" alt="">
-                            </button>
-                        </div>
-                    </a>
-                </div>
+                <a class="rec__item" data-article-type="medicine">
+                    <img class="rec__img" src="./img/common/medicine.jpg" alt="">
+                    <p class="rec__title ">Медосмотр</p>
+                    <p class="rec__addinfo">Подробно об медосмотре, который обязаны<br>проходить абитуриенты некоторых
+                        специаль..
+                    </p>
+                </a>
+                <a class="rec__item" data-article-type="admission,faculty">
+                    <img class="rec__img" src="./img/common/hse.jpg" alt="">
+                    <p class="rec__title ">Школа дизайна</p>
+                    <p class="rec__addinfo">Рассказываем о месте обитания<br>лучших дизайнеров </p>
+                </a>
+                <a class="rec__item" data-article-type="faculty">
+                    <img class="rec__img" src="./img/common/computerscience.jpg" alt="">
+                    <p class="rec__title ">Компьютерные науки</p>
+                    <p class="rec__addinfo">Подготовка специалистов в области<br>математики и компьютерных наук..</p>
+                </a>
             </div>
-            <a class="post_btn" href="./articlecard.html">Показать больше</a>
         </div>
     </section>
     <footer>
-        <div class="wrapper">
-            <div class="footer__flex">
+        <div class="container">
+            <div class="row">
                 <div class="follow">
                     <h2>ПОДПИШИСЬ</h2>
                     <form action="" class="follow__form">
                         <input class="follow__email" type="email" placeholder="mail">
                         <button class="follow__btn" type="submit">подписаться</button>
-
                     </form>
                 </div>
-                <div class="footer__info">
-                    <ul class="footer__menu">
-                        <li><a href="">Помощь</a></li>
-                        <li><a href="">Обратная связь</a></li>
-                        <li><a href="">Лицензия</a></li>
-                        <li><a href="">Политика<br>
-                                конфиденциальности</a></li>
-                    </ul>
-                </div>
-                <div class="footer__info">
-                    <ul class="footer__menu">
-                        <li><a href="">СЕРВИС</a></li>
-                        <li><a href="">О нас</a></li>
-                        <li><a href="">Вузам</a></li>
-                        <li><a href="">Рекламодателям</a></li>
-                    </ul>
+                <div class="row">
+                    <div class="footer__info">
+                        <h3 class="footer__subtitle">Помощь</h3>
+                        <ul class="footer__menu">
+                            <li><a href="">Обратная связь</a></li>
+                            <li><a href="">Лицензия</a></li>
+                            <li><a href="">Политика<br>
+                                    конфиденциальности</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__info">
+                        <h3 class="footer__subtitle">Сервис</h3>
+                        <ul class="footer__menu">
+                            <li><a href="">О нас</a></li>
+                            <li><a href="">Вузам</a></li>
+                            <li><a href="">Рекламодателям</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="footer__line">
-        </div>
-        <div class="wrapper">
-            <p class="copyright">© 2016 - 2023 ООО ENTER</p>
-        </div>
+        <hr class="footer__line">
     </footer>
-    <script src="script.js">
+    <script src="search.js">
     </script>
 </body>
-
-</html>

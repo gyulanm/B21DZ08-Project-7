@@ -5,149 +5,83 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>programm</title>
-    <link rel="stylesheet" href="stylesheet/style.css">
+    <title>Enter</title>
+    <link rel="stylesheet" href="stylesheet/common.css">
     <link rel="stylesheet" href="stylesheet/article.css">
+    <link rel="stylesheet" href="stylesheet/footer.css">
+    <link rel="stylesheet" href="stylesheet/header.css">
+    <link rel="stylesheet" href="stylesheet/variable.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
         <div class="wrapper">
             <div class="services">
-                <a class="btn_enter" href="./index.html"> Enter</a>
+                <a class="logo" href="./index.html"></a>
                 <form action="">
                     <input class="services__search" type="text" name="search" placeholder="поиск">
                 </form>
-                <a href="./account.html"><img src="img/account.svg" alt=""></a>
+                <nav class="header__nav nav">
+                    <a class="nav__link nav__link--selected" href="">Промо</a>
+                    <a class="nav__link" href="./index.html">О нас</a>
+                    <a class="nav__link" href="articlecard.html">Статьи</a>
+                </nav>
             </div>
         </div>
     </header>
     <section class="banner">
         <div class="container">
-            <div class="banner__wrapper banner__wrapper--article">
+            <div class="banner__wrapper">
                 <div class="banner__text-wrapper">
-                    <a class="banner__subtitle" href="./programm.html"> Программа </a>
-                    <h1 class="banner__title"> Математика и&nbsp;компьютерные науки</h1>
+                    <a class="banner__subtitle" href="./programm.html"> Статья </a>
+                    <h1 class="banner__title"> Как поступить<br>на бюджет?</h1>
                 </div>
-                <button class="btn__save"><img src="./img/articles/btnsave.png" alt=""></button>
-            </div>
-        </div>
     </section>
     <section class="promotion bg--blue">
         <div class="container">
-            <h2 class="promotion__title">Подробнее</h2>
-            <p class="promotion__description">Подготовка специалистов в области математики<br>
-                и компьютерных наук, владеющих языками<br>программирования для разработки<br>операционных систем.</p>
-        </div>
-    </section>
-    <section class="information">
-        <div class="container">
-            <h2 class="information__title">Поступление</h2>
-            <div class="row">
-                <div class="information__card card card--budget">
-                    <div class="card__img bg--blue">%</div>
-                    <h3 class="card__title">Бюджет</h3>
-                    <div class="card__divider card__divider--blue"></div>
-                    <ol class="card__list">
-                        <li class="card__list-item list-item row">
-                            <div class="row">
-                                <div class="list-item__number bg--blue">1</div>
-                                <p class="list-item__name">Русский язык</p>
-                            </div>
-                            <p class="list-item__point border--blue">95</p>
-                        </li>
-                        <li class="card__list-item list-item row">
-                            <div class="row">
-                                <div class="list-item__number bg--blue">2</div>
-                                <p class="list-item__name">Математика</p>
-                            </div>
-                            <p class="list-item__point border--blue">89</p>
-                        </li>
-                        <li class="card__list-item list-item row">
-                            <div class="row">
-                                <div class="list-item__number bg--blue">3</div>
-                                <p class="list-item__name">Информатика и ИКТ</p>
-                            </div>
-                            <p class="list-item__point border--blue">90</p>
-                        </li>
-                    </ol>
-                </div>
-                <div class="information__card card card--paid">
-                    <div class="card__img bg--green">$</div>
-                    <h3 class="card__title">Платно</h3>
-                    <div class="card__divider card__divider--green"></div>
-                    <ol class="card__list">
-                        <li class="card__list-item list-item row">
-                            <div class="row">
-                                <div class="list-item__number bg--green">1</div>
-                                <p class="list-item__name">Русский язык</p>
-                            </div>
-                            <p class="list-item__point border--green">72</p>
-                        </li>
-                        <li class="card__list-item list-item row">
-                            <div class="row">
-                                <div class="list-item__number bg--green">2</div>
-                                <p class="list-item__name">Математика</p>
-                            </div>
-                            <p class="list-item__point border--green">80</p>
-                        </li>
-                        <li class="card__list-item list-item row">
-                            <div class="row">
-                                <div class="list-item__number bg--green">3</div>
-                                <p class="list-item__name">Информатика и ИКТ</p>
-                            </div>
-                            <p class="list-item__point border--green">74</p>
-                        </li>
-                    </ol>
+            <div class="promotion__card">
+                <div class="promotion__text">
+                    <h2 class="promotion__title">Введение</h2>
+                    <p class="promotion__description">В этом году вступительная кампания необычная: сдавать ЕГЭ, а потом
+                        идти в вузы придется детям, которые последние два года учились
+                        из-за пандемии дистанционно. С другой стороны, появилось много
+                        новшеств. Разбираемся, каково придется тем детям, кто ставит себе
+                        цель непременно попасть в вуз «на бюджет».
+                    </p>
                 </div>
             </div>
         </div>
+        </div>
     </section>
-    <section class="university">
-        <div class="container">
-            <h2 class="university__title">Вузы</h2>
-            <div class="row">
-                <div class="university__card card card--MSU">
-                    <div class="card__chip">МГУ</div>
-                    <p class="card__points">
-                        от 98 бал.бюджет<br>от 75 бал.платно
-                    </p>
-                </div>
-                <div class="university__card card card--Baumna">
-                    <div class="card__chip">МГТУ им. Н. Э. Баумана</div>
-                    <p class="card__points">
-                        от 76 бал.бюджет<br>от 62 бал.платно
-                    </p>
-                </div>
-                <div class="university__card card card--MIPT">
-                    <div class="card__chip">МФТИ</div>
-                    <p class="card__points">
-                        от 86 бал.бюджет<br>от 69 бал.платно
-                    </p>
-                </div>
-            </div>
-            <div class="video-wrapper">
-                <video id="video" class="univesity__video video">
-                    <source src="./video/Факультет математики.mp4" type="video/mp4">
-                </video>
-                <button id="video-btn" class="video-btn">
-                    <img src="./img/play.svg" alt="">
-                </button>
-            </div>
+    <section class="rule">
+        <div class="rule__card">
+            <p class="rule__text">
+                Указ Президента РФ установил дополнительные квоты для детей
+                военнослужащих, участвующих в спецоперации.
+                В документе сказано, что квота составит 10% от общего количества бюджетных
+                мест на программах бакалавриата и специалитета, распределенных
+                каждому конкретному вузу.<br><br>Принимать будут по результатам вступительных испытаний, которые
+                вузы проводят самостоятельно, а детей военнослужащих, погибших
+                или получивших ранение, - примут без испытаний. Исключение -
+                дополнительные испытания творческой и профессиональной
+                направленности. Методические рекомендации для вузов в течение
+                месяца должно разработать Минобрнауки России. Крайний срок,
+                если считать с момента публикации документа, - 9 июня. Напомним,
+                что ЕГЭ стартует 26 мая, а прием документов в вузы – 20 июня.
+            </p>
         </div>
     </section>
     <section class="comments">
         <div class="container">
-            <h2 class="comments__title">Комментарии</h2>
+            <h2 class="comments__title article__title">Комментарии</h2>
             <div class="comments__divider divider">
                 <div class="divider--narrow"></div>
             </div>
             <div class="comments__row">
                 <div class="comments__card">
-                    <img class="comments__img " src="./img/articles/cooment1.png" alt="">
+                    <img class="comments__img " src="./img/article/cooment1.png" alt="">
                     <h4 class="card__name">Яна Киреева</h4>
                     <p class="card__text">Интересный факультет, если нравится
                         работать с большими данными, в ином
@@ -155,51 +89,41 @@
                         большой обьем математической работы. </p>
                 </div>
                 <div class="comments__card">
-                    <img class="comments__img" src="./img/articles/comment2.png" alt="">
+                    <img class="comments__img" src="./img/article/comment2.png" alt="">
                     <h4 class="card__name">Дима Колесников</h4>
                     <p class="card__text">Выбрал наобум, еще не вылетел. </p>
                 </div>
             </div>
         </div>
     </section>
-    <!-- исправить footer -->
-    <footer>
-        <div class="wrapper">
-            <div class="footer__flex">
-                <div class="follow">
-                    <h2>ПОДПИШИСЬ</h2>
-                    <form action="" class="follow__form">
-                        <input class="follow__email" type="email" placeholder="mail">
-                        <button class="follow__btn" type="submit">подписаться</button>
-                    </form>
-                </div>
-                <div class="footer__info">
-                    <ul class="footer__menu">
-                        <li><a href="">Помощь</a></li>
-                        <li><a href="">Обратная связь</a></li>
-                        <li><a href="">Лицензия</a></li>
-                        <li><a href="">Политика<br>
-                                конфиденциальности</a></li>
-                    </ul>
-                </div>
-                <div class="footer__info">
-                    <ul class="footer__menu">
-                        <li><a href="">СЕРВИС</a></li>
-                        <li><a href="">О нас</a></li>
-                        <li><a href="">Вузам</a></li>
-                        <li><a href="">Рекламодателям</a></li>
-                    </ul>
-                </div>
+    <section class="article">
+        <div class="container">
+            <h2 class="article__title article__title">Читайте</h2>
+            <div class="article__divider divider">
+                <div class="divider--narrow"></div>
+            </div>
+            <div class="rec__flex">
+                <a class="rec__item">
+                    <img class="rec__img" src="./img/common/documnet.jpg" alt="">
+                    <p class="rec__title ">Документы</p>
+                    <p class="rec__addinfo">Какие документы нужны<br>для поступления в вузу?
+                    </p>
+                </a>
+                <a class="rec__item" href="./article.html">
+                    <img class="rec__img" src="./img/common/budget.jpg" alt="">
+                    <p class="rec__title ">Как поступить на бюджет?</p>
+                    <p class="rec__addinfo">Все пути поступления на бюджетное <br> обучение + список оли.. </p>
+                </a>
+                <a class="rec__item">
+                    <img class="rec__img" src="./img/common/benefits.jpg" alt="">
+                    <p class="rec__title ">Льготы</p>
+                    <p class="rec__addinfo">Льготы при поступлении <br>
+                        в вуз 2023 в подробностях..</p>
+                </a>
             </div>
         </div>
-        <div class="footer__line">
-        </div>
-        <div class="wrapper">
-            <p class="copyright">© 2016 - 2023 ООО ENTER</p>
-        </div>
-    </footer>
-    <!-- исправленный footer -->
-    <!-- <footer>
+    </section>
+    <footer>
         <div class="container">
             <div class="row">
                 <div class="follow">
@@ -231,12 +155,7 @@
             </div>
         </div>
         <hr class="footer__line">
-        <p class="copyright">© 2016 - 2023 ООО ENTER</p>
-    </footer> -->
+    </footer>
     <script src="script.js">
     </script>
-    <script src="video.js">
-    </script>
 </body>
-
-</html>

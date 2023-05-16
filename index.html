@@ -6,27 +6,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Enter</title>
+    <link rel="stylesheet" href="stylesheet/common.css">
     <link rel="stylesheet" href="stylesheet/style.css">
+    <link rel="stylesheet" href="stylesheet/articlecard.css">
+    <link rel="stylesheet" href="stylesheet/article.css">
+    <link rel="stylesheet" href="stylesheet/footer.css">
+    <link rel="stylesheet" href="stylesheet/header.css">
+    <link rel="stylesheet" href="stylesheet/variable.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
         <div class="wrapper">
             <div class="services">
-                <a class="btn_enter" href="./index.html"> Enter</a>
+                <a class="logo" href="./index.html"></a>
                 <form action="">
                     <input class="services__search" type="text" name="search" placeholder="поиск">
                 </form>
-                <a href="./account.html"><img src="img/account.svg" alt=""></a>
+                <nav class="header__nav nav">
+                    <a class="nav__link nav__link--selected" href="">Промо</a>
+                    <a class="nav__link" href="./index.html">О нас</a>
+                    <a class="nav__link" href="./articlecard.html">Статьи</a>
+                </nav>
             </div>
         </div>
     </header>
     <main>
         <section class="promo">
-            <div class="wrapper">
+            <div class="cover">
                 <div class="promo__banner">
                     <h2 class="promo_title">О нас</h2>
                     <p class="promo_text">Поможем пройти тернистый путь поступления гораздо легче!</p>
@@ -36,7 +45,7 @@
         </section>
         <section class="news">
             <div class="topics">
-                <div class="wrapper">
+                <div class="cover">
                     <div class="title-group">
                         <h2 class="topics__title title">События</h2>
                         <p class="topics__addinfo addinfo">Актуальные мероприятия</p>
@@ -50,7 +59,7 @@
                                 </h3>
                                 <p class="topics__card-date topics__card-date--black">25 марта</p>
                             </div>
-                            <img class="topics__card-img" src="./img/mai.png" alt="">
+                            <img class="topics__card-img" src="./img/about/mai.png" alt="">
                         </div>
                         <div class="topics__card topics__card--blue">
                             <div class="column">
@@ -58,13 +67,13 @@
                                 </h3>
                                 <p class="topics__card-date topics__card-date--white">26 марта</p>
                             </div>
-                            <img class="topics__card-img" src="./img/hse.png" alt="">
+                            <img class="topics__card-img" src="./img/about/hse.png" alt="">
                         </div>
                     </div>
                 </div>
             </div>
             <div class="popular">
-                <div class="wrapper">
+                <div class="cover">
                     <div class="title-group">
                         <a class="popular__title title" href="./articlecard.html">Популярное</a>
                         <p class="popular__addinfo addinfo">Самые читаемые статьи</p>
@@ -83,7 +92,7 @@
                             </button>
                         </div>
                         <button class="popular__arrow">
-                            <img src="./img/populararrow.svg" alt="">
+                            <img src="./img/about/arrow.svg" alt="">
                         </button>
                     </div>
                 </div>
@@ -91,7 +100,7 @@
             </div>
             </div>
             <div class="recommendations">
-                <div class="wrapper">
+                <div class="cover">
                     <div class="title-group">
                         <a class="recommendations__title title" href="./articlecard.html">Рекомендуем</a>
                         <p class="recommendations__addinfo addinfo">То, что мы советуем</p>
@@ -100,74 +109,64 @@
                         <div class="highlight"></div>
                     </div>
                     <div class="rec__visible">
-                        <div class="rec__flex">
-                            <div class="rec__item">
-                                <img class="rec__img" src="img/medical.png" alt="">
-                                <h3 class="rec__hashtag">#Медосмотр</h3>
-                                <p class="rec__text text">Медосмотр для поступления:<br>медицинская справка 086/У
-                                </p>
-                                <p class="rec__addinfo">Подробно об медосмотре, который<br>обязаны проходить
-                                    абитуриенты<br>некоторых специаль..</p>
-                            </div>
-                            <div class="rec__item">
-                                <img class="rec__img" src="img/admission.jpg" alt="">
-                                <h3 class="rec__hashtag">#Поступление</h3>
-                                <p class="rec__text text">Какие документы нужны<br>для поступления в вузу?
-                                </p>
-                                <p class="rec__addinfo">Из этой статьи вы узнаете, какие<br>документы нужны для
-                                    поступления.. </p>
-                            </div>
-                            <div class="rec__item">
-                                <img class="rec__img" src="img/studentid.jpg" alt="">
-                                <h3 class="rec__hashtag">#Поступление</h3>
-                                <p class="rec__text text">Льготы при поступлении в вуз 2018 в<br>подробностях..
-                                </p>
-                                <p class="rec__addinfo">Все о льготах при поступлении в ВУЗ</p>
+                        <div class="container">
+                            <div class="rec__flex">
+                                <a class="rec__item">
+                                    <img class="rec__img" src="./img/common/documnet.jpg" alt="">
+                                    <p class="rec__title ">Документы</p>
+                                    <p class="rec__addinfo">Какие документы нужны<br>для поступления в вузу?
+                                    </p>
+                                </a>
+                                <a class="rec__item"  href="./article.html">
+                                    <img class="rec__img" src="./img/common/budget.jpg" alt="">
+                                    <p class="rec__title ">Как поступить на бюджет?</p>
+                                    <p class="rec__addinfo">Все пути поступления на бюджетное <br> обучение + список
+                                        оли..
+                                    </p>
+                                </a>
+                                <a class="rec__item">
+                                    <img class="rec__img" src="./img/common/benefits.jpg" alt="">
+                                    <p class="rec__title ">Льготы</p>
+                                    <p class="rec__addinfo">Льготы при поступлении <br>
+                                        в вуз 2023 в подробностях..</p>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
         </section>
     </main>
     <footer>
-        <div class="wrapper">
-            <div class="footer__flex">
+        <div class="container">
+            <div class="row">
                 <div class="follow">
                     <h2>ПОДПИШИСЬ</h2>
                     <form action="" class="follow__form">
                         <input class="follow__email" type="email" placeholder="mail">
                         <button class="follow__btn" type="submit">подписаться</button>
-
                     </form>
                 </div>
-                <div class="footer__info">
-                    <ul class="footer__menu">
-                        <li><a href="">Помощь</a></li>
-                        <li><a href="">Обратная связь</a></li>
-                        <li><a href="">Лицензия</a></li>
-                        <li><a href="">Политика<br>
-                                конфиденциальности</a></li>
-                    </ul>
-                </div>
-                <div class="footer__info">
-                    <ul class="footer__menu">
-                        <li><a href="">СЕРВИС</a></li>
-                        <li><a href="">О нас</a></li>
-                        <li><a href="">Вузам</a></li>
-                        <li><a href="">Рекламодателям</a></li>
-                    </ul>
+                <div class="row">
+                    <div class="footer__info">
+                        <h3 class="footer__subtitle">Помощь</h3>
+                        <ul class="footer__menu">
+                            <li><a href="">Обратная связь</a></li>
+                            <li><a href="">Лицензия</a></li>
+                            <li><a href="">Политика<br>
+                                    конфиденциальности</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__info">
+                        <h3 class="footer__subtitle">Сервис</h3>
+                        <ul class="footer__menu">
+                            <li><a href="">О нас</a></li>
+                            <li><a href="">Вузам</a></li>
+                            <li><a href="">Рекламодателям</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="footer__line">
-        </div>
-        <div class="wrapper">
-            <p class="copyright">© 2016 - 2023 ООО ENTER</p>
-        </div>
+        <hr class="footer__line">
     </footer>
-    <script src="script.js">
-    </script>
 </body>
-
-</html>
