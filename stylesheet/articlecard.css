@@ -17,6 +17,11 @@
     src: url(../fonts/Raleway-SemiBold.woff) format('woff');
     font-weight: 600;
 }
+@font-face {
+    font-family: 'Gropled';
+    src: url(../fonts/Gropled-Bold\ —\ копия.otf) format('otf');
+    font-weight: bold;
+}
 
 .post__title {
     font-family: 'Gropled';

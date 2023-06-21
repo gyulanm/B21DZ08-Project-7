@@ -17,10 +17,14 @@
     src: url(../fonts/Raleway-SemiBold.woff) format('woff');
     font-weight: 600;
 }
+@font-face {
+    font-family: 'Gropled';
+    src: url(../fonts/Gropled-Bold\ —\ копия.otf) format('otf');
+    font-weight: bold;
+}
 .promo {
     margin-bottom: 107px;
 }
-
 .promo__banner {
     background: url("./../img/about/Rectangle\ 4236.jpg") center center no-repeat;
     background-color: var(--col-bg-light);
@@ -175,9 +179,9 @@
     text-transform: uppercase;
     margin: 0;
     text-decoration: none;
-    font-family: 'Gropled';
-    font-weight: 700;
-    font-size: 57px;
+    font-size: 55px;
+    font-family: Raleway;
+    font-weight: 600;
 }
 
 .addinfo {
