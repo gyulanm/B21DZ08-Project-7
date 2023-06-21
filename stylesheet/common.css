@@ -19,4 +19,8 @@
 }
 body {
 background-color: var(--col-bg);
+scroll-behavior: smooth;
+}
+.hidden {
+    display: none;
 }

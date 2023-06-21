@@ -1,0 +1,230 @@
+@import url("variables.css");
+
+@font-face {
+    font-family: 'Raleway';
+    src: url(../fonts/Raleway-Regular.woff) format('woff');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url(../fonts/Raleway-Bold.woff) format('woff');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url(../fonts/Raleway-SemiBold.woff) format('woff');
+    font-weight: 600;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: raleway;
+}
+
+.banner__row {
+    background: url(../img/articlemath/banner.jpg) center center no-repeat;
+    background-size: cover;
+    height: 490px;
+    padding: 30px 45px 57px;
+    box-sizing: border-box;
+    background-color: black;
+    border-radius: 12px;
+    position: relative;
+}
+
+.information__card {
+    width: calc((100% - 88px)/2);
+    padding: 36px 34px 67px;
+    border-radius: 40px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-sizing: border-box;
+    background-color: white;
+}
+
+.information__title {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 52px;
+    line-height: 61px;
+    color: #000000;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.card__img {
+    font-family: 'Raleway';
+    font-weight: 600;
+    font-size: 52px;
+    line-height: 61px;
+    border-radius: 50%;
+    height: 105px;
+    width: 105px;
+    padding: 26px 33px 30px;
+    box-sizing: border-box;
+}
+
+.card__title {
+    margin-top: 38px;
+    margin-bottom: 20px;
+}
+
+.card__list {
+    padding: 0;
+    margin: 0;
+}
+
+ol {
+    display: block;
+    list-style-type: decimal;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+.list-item__number {
+    font-family: 'Raleway';
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 31px;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    padding: 8px 18px 10px;
+    box-sizing: border-box;
+    margin-right: 29px;
+}
+.list-item__text {
+    display: flex;
+    flex-direction: row;
+}
+.card__list-item.row {
+    margin-bottom: 42px;
+}
+.card__list-item:last-child {
+    margin-bottom: 0;
+}
+.bg--green {
+    background-color: #CB9750;
+    color: var(--col-white);
+}
+
+.card__divider {
+    margin-bottom: 56px;
+    border-radius: 40px;
+    border: 2px solid;
+}
+
+.card__divider--green {
+    border-color: rgba(203, 151, 80, 0.4);
+    ;
+}
+
+.border--green {
+    border-bottom: 4px solid rgba(203, 151, 80, 0.8);
+}
+
+.card__divider--blue {
+    border-color: rgba(57, 53, 254, 0.22);
+}
+
+.information__card {
+    width: calc((100% - 88px)/2);
+    padding: 36px 34px 67px;
+    border-radius: 40px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-sizing: border-box;
+    background-color: white;
+}
+
+.university__title {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 52.3214px;
+    line-height: 61px;
+    color: #000000;
+}
+
+.card__chip {
+    padding: 7px 17px;
+    color: var(--col-white);
+    background-color: #3935FE;
+    border-radius: 26px;
+    max-width: max-content;
+}
+
+.bg--blue {
+    background-color: var(--col-blue);
+    color: var(--col-white);
+}
+
+.card__points {
+    color: var(--col-white);
+}
+
+.card--Baumna {
+    background-image: url("../img/articlemath/baumna.jpg");
+}
+
+.card--MSU {
+    background-image: url("../img/articlemath/msu.jpg");
+}
+
+.card--MIPT {
+    background-image: url("../img/articlemath/mipt.jpg");
+}
+
+.university__card {
+    width: calc((100% - 80px)/3);
+    padding: 24px 34px;
+    border-radius: 30px;
+    /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
+    box-sizing: border-box;
+    width: 416px;
+    height: 588px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.comments {
+    background-color: black;
+    margin-top: 135px;
+    padding-top: 121px;
+    padding-bottom: 116px;
+    border-radius: 30px 30px 0 0;
+    position: relative;
+}
+.comments__title {
+    margin: 0;
+    margin-bottom: 70px;
+}
+.comments__title {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 52.3214px;
+    line-height: 61px;
+    color: var(--col-white);
+}
+.comments__sticker {
+    position: absolute;
+    top: 34px;
+    right: 87px;
+}
+.stars__sticker {
+    position: absolute;
+    top: 82px;
+    left: 400px;
+}

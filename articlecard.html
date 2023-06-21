@@ -20,24 +20,34 @@
     <header>
         <div class="wrapper">
             <div class="services">
-                <a class="logo" href="./index.html"></a>
+                <div class="logo">
+                    <img class="logo__img" src="./img/common/logo.svg" alt="">
+                </div>
                 <form action="">
                     <input class="services__search" type="text" name="search" placeholder="поиск">
                 </form>
                 <nav class="header__nav nav">
-                    <a class="nav__link nav__link--selected" href="">Промо</a>
-                    <a class="nav__link" href="./index.html">О нас</a>
-                    <a class="nav__link" href="./articlecard.html">Статьи</a>
+                    <a class="nav__link " href="./promo.html">Промо</a>
+                    <a class="nav__link " href="./index.html">О нас</a>
+                    <a class="nav__link nav__link--selected" href="./articlecard.html">Статьи</a>
                 </nav>
             </div>
         </div>
     </header>
-    <header class="header__menu">
+    <section class="menu">
         <div class="container">
             <h2 class="post__title">Статьи</h2>
-            <nav class="header__filter filter">
-                <button class="filter__link filter__link--selected article-hashtag " data-filter-type="all"  href="#">Все</button>
-                <button class="filter__link article-hashtag" data-filter-type="recommendations" href="#">Рекомендуем</button>
+            <div class="sticker heart__sticker">
+                <img src="./img/article/heartsticker.png" alt="">
+            </div>
+            <div class="sticker programm__sticker">
+                <img src="./img/article/programmsticker.png" alt="">
+            </div>
+            <nav class="menu__filter filter">
+                <button class="filter__link filter__link--selected article-hashtag " data-filter-type="all"
+                    href="#">Все</button>
+                <button class="filter__link article-hashtag" data-filter-type="recommendations"
+                    href="#">Рекомендуем</button>
                 <button class="filter__link article-hashtag" data-filter-type="popular" href="#">Популярное</button>
                 <button class="filter__link article-hashtag" data-filter-type="admission" href="#">Поступление</button>
                 <button class="filter__link article-hashtag" data-filter-type="budget" href="#">Бюджет</button>
@@ -45,8 +55,8 @@
                 <button class="filter__link article-hashtag" data-filter-type="medicine" href="#">Медосмотр</button>
             </nav>
         </div>
-    </header>
-    <section class="article">
+    </section>
+    <section class="articles">
         <div class="container">
             <div class="article__flex">
                 <a class="rec__item" data-article-type="popular,recommendations,admission">
@@ -65,7 +75,7 @@
                     <p class="rec__title ">Льготы</p>
                     <p class="rec__addinfo">Льготы при поступлении <br>
                         в вуз 2023 в подробностях..</p>
-                    </a>
+                </a>
                 <a class="rec__item" data-article-type="medicine">
                     <img class="rec__img" src="./img/common/medicine.jpg" alt="">
                     <p class="rec__title ">Медосмотр</p>
@@ -90,34 +100,47 @@
         <div class="container">
             <div class="row">
                 <div class="follow">
-                    <h2>ПОДПИШИСЬ</h2>
-                    <form action="" class="follow__form">
-                        <input class="follow__email" type="email" placeholder="mail">
-                        <button class="follow__btn" type="submit">подписаться</button>
-                    </form>
-                </div>
-                <div class="row">
-                    <div class="footer__info">
-                        <h3 class="footer__subtitle">Помощь</h3>
-                        <ul class="footer__menu">
-                            <li><a href="">Обратная связь</a></li>
-                            <li><a href="">Лицензия</a></li>
-                            <li><a href="">Политика<br>
-                                    конфиденциальности</a></li>
-                        </ul>
+                    <a class="footer__name">Enter</a>
+                    <a class="footer__number" href="tel:+7 (925) 545-09-09">+7 (925) 545-09-09</a>
+                    <div class="footer__icons icons">
+                        <a class="icons__link" href="">
+                            <img class="icons__img icons__img--instagram" src="./img/common/instagram.svg" alt="">
+                        </a>
+                        <a class="icons__link" href="">
+                            <img class="icons__img icons__img--twitter" src="./img/common/twitter.svg" alt="">
+                        </a>
+                        <a class="icons__link" href="">
+                            <img class="icons__img icons__img--vk" src="./img/common/vk.svg" alt="">
+                        </a>
                     </div>
-                    <div class="footer__info">
-                        <h3 class="footer__subtitle">Сервис</h3>
-                        <ul class="footer__menu">
-                            <li><a href="">О нас</a></li>
-                            <li><a href="">Вузам</a></li>
-                            <li><a href="">Рекламодателям</a></li>
-                        </ul>
+                </div>
+                <div>
+                    <div class="row">
+                        <div class="footer__info">
+                            <h3 class="footer__subtitle">Помощь</h3>
+                            <ul class="footer__menu">
+                                <li><a href="">Обратная связь</a></li>
+                                <li><a href="">Лицензия</a></li>
+                                <li><a href="">Политика<br>
+                                        конфиденциальности</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__info">
+                            <h3 class="footer__subtitle">Сервис</h3>
+                            <ul class="footer__menu">
+                                <li><a href="">О нас</a></li>
+                                <li><a href="">Вузам</a></li>
+                                <li><a href="">Рекламодателям</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="line">
+                        <p class="footer__text">Политика обработки<br>персональных данных</p>
                     </div>
                 </div>
             </div>
         </div>
-        <hr class="footer__line">
+        </div>
     </footer>
     <script src="search.js">
     </script>

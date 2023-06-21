@@ -4,13 +4,13 @@ let searchValue = "";
 
 const articles = document.querySelectorAll('.rec__item');
 const searchInput = document.querySelector('.services__search');
-const articlesTypesContainer = document.querySelector(".header__filter");
+const articlesTypesContainer = document.querySelector(".menu__filter");
 
 const filterCards = () => {
     let filteredCards = articles;
     if (!searchValue && articleType === "all") {
         for (const card of filteredCards) {
-            card.style.display = 'block'; // делаем видимыми все карточки
+            card.style.display = 'grid'; // делаем видимыми все карточки
         }
         return;
     }
@@ -39,7 +39,7 @@ const filterCards = () => {
         filteredCards = result
     }
     for (const card of filteredCards) {
-        card.style.display = 'block';
+        card.style.display = 'grid';
     }
 };
 

@@ -18,7 +18,7 @@
     font-weight: 600;
 }
 .promo {
-    margin-bottom: 57px;
+    margin-bottom: 107px;
 }
 
 .promo__banner {
@@ -40,11 +40,11 @@
 
 .btn {
     border-radius: 25px;
-    background-color: var(--col-green);
+    background-color: var(--col-blue);
     font-size: 28px;
     padding: 10px 30px;
     border: none;
-    color: black;
+    color: var(--col-white);
     box-sizing: border-box;
     display: block;
     max-width: 166px;
@@ -75,10 +75,11 @@
     margin-left: -36px;
 }
 .cover {
-    max-width: 1400px;
+    max-width: 1540px;
     margin: 0 auto;
     width: 95%;
     padding: 1px;
+    position: relative;
 }
 .topic__square {
     height: 22vw;
@@ -116,7 +117,7 @@
 }
 
 .topics__card--blue {
-    background-color: #3935FE;
+    background-color: var(--col-blue);
 }
 
 .topics__card-title {
@@ -165,6 +166,8 @@
     background-color: black;
     border-top-left-radius: 5vw;
     border-top-right-radius: 5vw;
+    padding-top: 174px;
+    padding-bottom: 249px;
 }
 
 .title {
@@ -172,10 +175,9 @@
     text-transform: uppercase;
     margin: 0;
     text-decoration: none;
-    font-family: 'Raleway';
-    font-weight: 600;
+    font-family: 'Gropled';
+    font-weight: 700;
     font-size: 57px;
-    line-height: 67px;
 }
 
 .addinfo {
@@ -191,16 +193,15 @@
 .title-group {
     display: flex;
     align-items: center;
-    margin-top: 100px;
-    margin-bottom: 15px;
+    margin-bottom: 62px;
     gap: 50px;
 }
 
-.divider {
+.divider--full {
     height: 2px;
     position: relative;
     background-color: var(--col-dark-gray);
-    margin-bottom: 52px;
+    margin-bottom: 80px;
 }
 
 .highlight {
@@ -211,18 +212,30 @@
     width: 100px;
     background-color: var(--col-gray);
 }
+.popular {
+    margin-top: 219px;
+    margin-bottom: 157px;
+}
 
 .popular__flex {
     display: grid;
-    grid-template-columns: 1fr 1fr 66px;
-    grid-template-rows: 409px;
-    column-gap: 65px;
     align-items: center;
-    margin-top: 100px;
+    margin-top: 112px;
+    /* grid-template-columns: 50px 1fr 1fr 50px; */
+     grid-template-columns: 50px 1fr 50px;
+    grid-template-rows: 445px;
+    column-gap: 45px;
+}
+.popular__cards-wrapper {
+    display: grid;
+    /* grid-template-columns: 50px 1fr 1fr 50px; */
+     grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 445px;
+    column-gap: 45px;
 }
 
 .popular__card {
-    border-radius: 30px;
+    border-radius: 32px;
     position: relative;
     padding: 24px 15px;
     box-sizing: border-box;
@@ -251,19 +264,48 @@
 .popular__card--design {
     background: url("./../img/about/hsedesign.png") center center no-repeat;
     background-color: var(--col-blue);
+    background-size: cover;
 }
-
+.popular__card--de {
+    background: url("./../img/articlemath/baumna.jpg") center center no-repeat;
+    background-color: var(--col-blue);
+    background-size: cover;
+    text-decoration: none;
+}
+.popular__card--ma {
+    background: url("./../img/about/mai.png") center center no-repeat;
+    background-color: var(--col-blue);
+    background-size: cover;
+    text-decoration: none;
+}
 .popular__card--maths {
     background: url("./../img/about/msu.png") center center no-repeat;
     background-color: var(--col-blue);
+    background-size: cover;
+    text-decoration: none;
+}
+.popular__card--law {
+    background: url("./../img/about/law.png") center center no-repeat;
+    background-color: var(--col-blue);
+    background-size: cover;
+    text-decoration: none;
+}
+.popular__card--mgimo {
+    background: url("./../img/about/mgimo.png") center center no-repeat;
+    background-color: #F0BE76;
+    background-size: cover;
+    text-decoration: none;
 }
 .popular__arrow{
     border-radius: 50%;
-    width: 66px;
-    height: 66px;
+    width: 50px;
+    height: 50px;
     border: none;
     background: transparent;
     border: 1px solid #FFFFFF;
+}
+.popular__arrow--prev {
+    transform: rotate(180deg);
 }
 .rec__img {
 
@@ -292,11 +334,15 @@
 .red {
     fill: red !important;
 }
+.swiper {
+    overflow-x: auto;
+}
 .rec__flex {
     display: grid;
     gap: 25px;
     padding: 0 0 50px 0;
     grid-template-columns: repeat(3,1fr);
+    width: max-content;
 }
 
 .rec__uni {

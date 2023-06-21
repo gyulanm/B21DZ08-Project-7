@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter</title>
+    <link rel="stylesheet" href="stylesheet/promo.css">
+    <link rel="stylesheet" href="stylesheet/common.css">
+    <link rel="stylesheet" href="stylesheet/header.css">
+    <link rel="stylesheet" href="stylesheet/variable.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+
+<body>
+    <header class="header">
+        <div class="wrapper">
+            <div class="services">
+                <div class="logo__promo">
+                    <img class="logo__img" src="./img/common/logo.svg" alt="">
+                </div>
+                <nav class="header__nav nav">
+                    <a class="link__nav nav__link--selected" href="#banner">о нас</a>
+                    <a class="link__nav " href="#ad">премущества</a>
+                    <a class="link__nav" href="#distribution">контакты</a>
+                </nav>
+                <div class="header_button">
+                    <a class="nav__button " href="./index.html">читать
+                        <img class="arrow__promo" src="./img/promo/Arrowpromo.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="banner" id="banner">
+        <img class="banner_img" src="./img/promo//banner.jpg" alt="">
+        <p class="banner_text">Профориентационный<br>медиа-сервис, представляющий<br>необходимую информацию<br>для
+            поступления</p>
+    </section>
+    <section class="question">
+        <h2 class="question__text">
+            Думаете насчет<br>выбора профессии?
+        </h2>
+        <img src="./img/promo/entersticker.png" class="sticker enter__sticker" alt="">
+        <img src="./img/promo/logosticker.png" class="sticker logo__sticker" alt="">
+        <img src="./img/promo/intrestingsticker.png" class="sticker intresting__sticker" alt="">
+    </section>
+    <section class="ad" id="ad">
+        <div class="row">
+            <h3 class="ad__title">Будем вашим компасом</h3>
+            <div>
+                <button disabled class="ad__btn ad__btn--prev">
+                    <img src="./img/promo/Arrow.png" alt=""></button>
+                <button class="ad__btn ad__btn--next">
+                    <img src="./img/promo/Arrow.png" alt=""></button>
+            </div>
+        </div>
+        <div class="ad__slider">
+            <div class="slide">
+                <div class="slide__column">
+                    <span class="slide__number">01</span>
+                    <img class="slide__title" src="./img/promo/backtext.png" alt="">
+                    <p class="slide__text">Увлекательные подборки<br>статей на интересующие<br>вас профессиональные темы
+                    </p>
+                </div>
+                <div class="slide__column ">
+                    <img class="slide__photo" src="./img/promo/slide1.png" alt="">
+                </div>
+            </div>
+            <div class="slide hidden">
+                <div class="slide__column">
+                    <span class="slide__number">02</span>
+                    <img class="slide__title" src="./img/promo/backtext2.png" alt="">
+                    <p class="slide__text">К статьям об образовательных<br>программах прилагается<br>информация о вузах
+                    </p>
+                </div>
+                <div class="slide__column ">
+                    <img class="slide__photo" src="./img/promo/slide2.png" alt="">
+                </div>
+            </div>
+            <div class="slide hidden">
+                <div class="slide__column">
+                    <span class="slide__number">03</span>
+                    <h4 claass="slide__title">Честно говоря</h4>
+                    <!-- <img class="slide__title" src="./img/promo/backtext.png" alt=""> -->
+                    <p class="slide__text">Честные отзывы от студентов,<br>представленных программ,<br>помогут сделать
+                        правильный выбор</p>
+                </div>
+                <div class="slide__column ">
+                    <img class="slide__photo" src="./img/promo/slide3.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="distribution" id="distribution">
+        <div class="distribution__card">
+            <div class="distribution__wrapper">
+                <h5 class="distribution__title">Следи за новостями</h5>
+                <p class="distribution__text">Подпишись на обновления нашего<br>медиа-сервиса, чтобы ничего<br>не
+                    пропустить
+                </p>
+                <div class="footer__flex">
+                    <div class="follow">
+                        <form action="" class="follow__form">
+                            <input class="follow__email" type="email" placeholder="mail">
+                            <button class="follow__btn" type="submit">подписаться</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="follow">
+                    <a class="footer__name">Enter</a>
+                    <a class="footer__number" href="tel:+7 (925) 545-09-09">+7 (925) 545-09-09</a>
+                    <div class="footer__icons icons">
+                        <a class="icons__link" href="">
+                            <img class="icons__img icons__img--instagram" src="./img/common/instagram.svg" alt="">
+                        </a>
+                        <a class="icons__link" href="">
+                            <img class="icons__img icons__img--twitter" src="./img/common/twitter.svg" alt="">
+                        </a>
+                        <a class="icons__link" href="">
+                            <img class="icons__img icons__img--vk" src="./img/common/vk.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <div class="row">
+                        <div class="footer__info">
+                            <h3 class="footer__subtitle">Помощь</h3>
+                            <ul class="footer__menu">
+                                <li><a href="">Обратная связь</a></li>
+                                <li><a href="">Лицензия</a></li>
+                                <li><a href="">Политика<br>
+                                        конфиденциальности</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__info">
+                            <h3 class="footer__subtitle">Сервис</h3>
+                            <ul class="footer__menu">
+                                <li><a href="">О нас</a></li>
+                                <li><a href="">Вузам</a></li>
+                                <li><a href="">Рекламодателям</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="line">
+                        <p class="footer__text">Политика обработки<br>персональных данных</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </footer>
+    <script src="./simple-slider.js"></script>
+</body>

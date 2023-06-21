@@ -22,12 +22,12 @@
     font-family: 'Gropled';
     font-weight: 700;
     font-size: 52px;
-    line-height: 12px;
     color: #25262A;
+    margin: 0;
 }
 
-.header__filter {
-    margin-top: 60px;
+.menu__filter {
+    margin-top: 82px;
     background-color: #FFFFFF;
     border-radius: 10px;
 }
@@ -59,4 +59,21 @@
     background: #25262A;
     border-radius: 10px;
     color: #FFFFFF;
+}
+.articles {
+    margin-bottom: 75px;
+    border-radius: 30px;
+}
+.menu {
+    position: relative;
+}
+.heart__sticker {
+    position: absolute;
+    top: -20px;
+    left: 351px;
+}
+.programm__sticker {
+    position: absolute;
+    top: -108px;
+    left: 487px;
 }
