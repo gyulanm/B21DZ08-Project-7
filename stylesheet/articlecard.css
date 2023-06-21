@@ -17,6 +17,7 @@
     src: url(../fonts/Raleway-SemiBold.woff) format('woff');
     font-weight: 600;
 }
+
 @font-face {
     font-family: 'Gropled';
     src: url(../fonts/Gropled-Bold\ —\ копия.otf) format('otf');
@@ -24,9 +25,9 @@
 }
 
 .post__title {
-    font-family: 'Gropled';
-    font-weight: 700;
     font-size: 52px;
+    font-family: Raleway;
+    font-weight: 600;
     color: #25262A;
     margin: 0;
 }
@@ -52,7 +53,7 @@
 
 .article__flex {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     column-gap: 75px;
     row-gap: 118px;
     margin-top: 95px;
@@ -65,18 +66,22 @@
     border-radius: 10px;
     color: #FFFFFF;
 }
+
 .articles {
     margin-bottom: 75px;
     border-radius: 30px;
 }
+
 .menu {
     position: relative;
 }
+
 .heart__sticker {
     position: absolute;
     top: -20px;
     left: 351px;
 }
+
 .programm__sticker {
     position: absolute;
     top: -108px;
